@@ -320,6 +320,6 @@ O painel de debug flutuante pode ser aberto via popup ou pelo atalho na página.
 
 <div align="center">
 
-Feito com ♥ para estudantes da Cogna / Unopar
+Feito para estudantes da  Unopar
 
 </div>
