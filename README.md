@@ -6,9 +6,9 @@
 
 **Extensão de produtividade para a plataforma Ampli / Unopar**
 
-[![Versão](https://img.shields.io/badge/versão-5.0.0-6366f1?style=flat-square)](https://github.com/seu-usuario/misoto)
+[![Versão](https://img.shields.io/badge/versão-5.0.0-6366f1?style=flat-square)](https://github.com/Misoto7/misoto_extension)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-0ea5e9?style=flat-square&logo=google-chrome)](https://developer.chrome.com/docs/extensions/mv3/)
-[![Open Source](https://img.shields.io/badge/open%20source-♥-22c55e?style=flat-square)](https://github.com/seu-usuario/misoto)
+[![Open Source](https://img.shields.io/badge/open%20source-♥-22c55e?style=flat-square)](https://github.com/Misoto7/misoto_extension)
 
 Automatiza marcação de aulas, faz download de vídeos HLS, captura dados do portal Cogna e neutraliza sistemas de detecção de foco — tudo em uma única extensão leve e sem dependências externas.
 
@@ -35,7 +35,7 @@ Automatiza marcação de aulas, faz download de vídeos HLS, captura dados do po
 
 Misoto é uma extensão para navegadores baseados em Chromium que opera sobre os domínios `*.unopar.com.br` e `*.cogna.com.br`. Ela intercepta chamadas GraphQL autenticadas, gerencia estado reativo interno e injeta scripts no contexto da página principal (`MAIN world`) para fornecer controle avançado sobre eventos do browser.
 
-A versão **5.0.0** foi reescrita do zero com foco em:
+A versão **5.0.0** foi reescrita com foco em:
 
 - Arquitetura modular com separação clara entre `core`, `features`, `infra` e `ui`
 - Rate limiting automático com backoff exponencial
@@ -102,9 +102,6 @@ chrome://extensions/
 # 3. Ative o "Modo desenvolvedor" (canto superior direito)
 
 # 4. Clique em "Carregar sem compactação" e selecione a pasta raiz do projeto
-```
-
-Após carregar, o ícone da Misoto aparecerá na barra de ferramentas do Chrome.
 
 ---
 
