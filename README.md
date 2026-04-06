@@ -297,6 +297,6 @@ const UI = {
 
 <div align="center">
 
-Feito com ❤️ por Misoto7
+Feito por por Misoto7
 
 </div>
