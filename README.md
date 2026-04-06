@@ -93,7 +93,7 @@ Disponível em três perfis: **Full** (tudo ativado), **Soft** (bloqueios passiv
 
 ```bash
 # 1. Clone ou extraia o repositório
-git clone https://github.com/seu-usuario/misoto.git
+git clone https://github.com/Misoto7/misoto_extension.git
 # ou descompacte misoto.zip
 
 # 2. Abra o Gerenciador de Extensões
