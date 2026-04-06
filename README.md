@@ -331,4 +331,12 @@ Pull requests, issues e sugestões são muito bem-vindos.
 
 Feito por Misoto7
 
+---
+
+## ⚠️ Aviso Legal
+
+Esta extensão é para fins educacionais. O usuário é responsável por 
+seu uso conforme os termos da plataforma Unopar/Ampli.
+
+
 </div>
