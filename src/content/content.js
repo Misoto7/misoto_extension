@@ -55,6 +55,14 @@ async function _doFetchStudentId() {
     DebugLog.ok(`fetchStudentId: ✓ ${studentId}`);
   } catch (err) {
     DebugLog.warn(`fetchStudentId: falha — ${err.message}`);
+
+    // Se o token foi rejeitado pela API, descarta para evitar retries com token inválido
+    if (/Session not found|Access Denied/i.test(err.message)) {
+      DebugLog.warn('fetchStudentId: token inválido — descartando do store e storage');
+      Store.set('sessionToken', null);
+      Store.set('studentId', null);
+      AppStorage.remove(STORAGE.TOKEN);
+    }
   }
 }
 
