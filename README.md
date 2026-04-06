@@ -287,21 +287,6 @@ const UI = {
 
 ---
 
-## 🛣 Roadmap
-
-- [ ] Melhorar UI  
-- [ ] Exportação de aulas  
-- [ ] Dashboard avançado  
-- [ ] Novas plataformas  
-
----
-
-## 🤝 Contribuindo
-
-Pull requests são bem-vindos.
-
----
-
 ## ⭐ Apoie o projeto
 
 - ⭐ Dê uma estrela  
