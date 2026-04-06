@@ -8,12 +8,19 @@
 🎬 Baixe vídeos direto da plataforma  
 🧠 Ignore bloqueios de foco  
 
-Extensão tudo-em-um para alunos da Unopar / Ampli
+Automação completa para a plataforma Unopar / Ampli
+
+<p align="center">
+  <a href="https://github.com/Misoto7/misoto_extension">⭐ Star</a> •
+  <a href="#-instalação">🚀 Instalar</a> •
+  <a href="#-funcionalidades">⚙️ Funcionalidades</a>
+</p>
 
 [![Versão](https://img.shields.io/badge/versão-5.0.0-6366f1?style=flat-square)](https://github.com/Misoto7/misoto_extension)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-0ea5e9?style=flat-square&logo=google-chrome)](https://developer.chrome.com/docs/extensions/mv3/)
 [![Status](https://img.shields.io/badge/status-active-success?style=flat-square)]()
 [![Open Source](https://img.shields.io/badge/open%20source-♥-22c55e?style=flat-square)](https://github.com/Misoto7/misoto_extension)
+![Chrome](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=google-chrome&logoColor=white)
 
 </div>
 
@@ -21,7 +28,9 @@ Extensão tudo-em-um para alunos da Unopar / Ampli
 
 ## 👀 Preview
 
-> *(vou adicionar gif depois kkk)*
+<p align="center">
+  <img src="./docs/preview.gif" width="700">
+</p>
 
 ---
 
@@ -29,9 +38,19 @@ Extensão tudo-em-um para alunos da Unopar / Ampli
 
 - Economiza horas vendo aulas manualmente  
 - Automatiza tarefas repetitivas da plataforma  
-- Reduz limitações de foco e presença da página  
+- Reduz limitações de foco e presença da página
 - Permite acessar e compartilhar aulas facilmente  
 - Tudo em uma única extensão leve e sem dependências  
+
+---
+
+## 🧠 Diferenciais
+
+- Arquitetura modular (core / features / infra / ui)  
+- Sem dependências externas  
+- Rate limiter com backoff exponencial  
+- Logger com sanitização de dados sensíveis  
+- Execução no MAIN world (nível avançado)  
 
 ---
 
@@ -84,7 +103,7 @@ Perfis disponíveis:
 
 ## ⚡ Como funciona
 
-Misoto atua em **três camadas principais**:
+Misoto intercepta e controla o comportamento da plataforma em tempo real, utilizando múltiplos contextos do Chrome Extension MV3:
 
 ### 1. Service Worker (background)
 
@@ -203,6 +222,13 @@ PENALTY_MS              : 10000
 
 ---
 
+## 🌐 Compatibilidade
+
+- Google Chrome 109+  
+- Navegadores Chromium (Edge, Brave, etc)  
+
+---
+
 ## ⚙️ Instalação
 
 ```bash
@@ -287,6 +313,12 @@ const UI = {
 
 ---
 
+## 🤝 Contribuindo
+
+Pull requests, issues e sugestões são muito bem-vindos.
+
+---
+
 ## ⭐ Apoie o projeto
 
 - ⭐ Dê uma estrela  
@@ -297,6 +329,6 @@ const UI = {
 
 <div align="center">
 
-Feito por por Misoto7
+Feito por Misoto7
 
 </div>
