@@ -1,0 +1,103 @@
+{
+  "manifest_version": 3,
+  "name": "Misoto",
+  "version": "5.0.0",
+  "description": "Marcação automática de aulas, download de vídeos HLS, captura Cogna e Focus Freeze.",
+  "permissions": [
+    "storage",
+    "webRequest",
+    "downloads",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://graphql.ampli.com.br/*",
+    "https://*.unopar.com.br/*",
+    "https://*.cogna.com.br/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.unopar.com.br/*"
+      ],
+      "js": [
+        "src/core/config/constants.js",
+        "src/core/state/store.js",
+        "src/core/logger/logger.js",
+        "src/core/utils/async.js",
+        "src/core/utils/dom.js",
+        "src/core/utils/network.js",
+        "src/core/rate-limiter/rate-limiter.js",
+        "src/infra/graphql/ampli-client.js",
+        "src/infra/hls/hls-downloader.js",
+        "src/infra/storage/storage.js",
+        "src/shared/events.js",
+        "src/features/cogna/cogna.parser.js",
+        "src/features/cogna/cogna.service.js",
+        "src/features/cogna/cogna.handlers.js",
+        "src/features/auto-completion/auto-completion.service.js",
+        "src/features/video-download/video-download.service.js",
+        "src/ui/widget/components/button.js",
+        "src/ui/widget/components/badge.js",
+        "src/ui/widget/widget.js",
+        "src/ui/debug/filters.js",
+        "src/ui/debug/panel.js",
+        "src/content/content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/features/cogna/cogna-frame.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/features/focus-freeze/bridge.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/features/focus-freeze/bootstrap.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true,
+      "world": "MAIN"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
