@@ -21,7 +21,7 @@ Extensão tudo-em-um para alunos da Unopar / Ampli
 
 ## 👀 Preview
 
-> *(adicione aqui um GIF depois — isso aumenta MUITO o impacto)*
+> *(vou adicionar gif depois kkk)*
 
 ---
 
