@@ -317,22 +317,6 @@ O painel de debug flutuante pode ser aberto via popup ou pelo atalho na página.
 
 ---
 
-## Contribuindo
-
-Pull requests são bem-vindos. Para mudanças grandes, abra uma issue primeiro para discutir o que você gostaria de alterar.
-
-```bash
-# Após editar os arquivos, recarregue a extensão em:
-chrome://extensions/  →  botão de reload na extensão Misoto
-```
-
-Siga o estilo existente:
-- `'use strict'` em todos os arquivos
-- IIFE com retorno de API pública para módulos do content script
-- Eventos via `EventBus` em vez de chamadas diretas entre features
-- Sem dependências externas — zero `npm install`
-
----
 
 <div align="center">
 
